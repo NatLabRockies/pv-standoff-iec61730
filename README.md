@@ -48,6 +48,14 @@ They include:
 
 ---
 
+## Download datasets
+
+To automatically download the OpenEI datasets:
+
+```bash
+python download_data.py
+```
+
 ## Usage
 
 ### 1. Access data programmatically

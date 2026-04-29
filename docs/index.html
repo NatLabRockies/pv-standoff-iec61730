@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PV Standoff IEC 61730 Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>PV Standoff IEC 61730 Calculator</h1>
+
+    <p>
+      Enter a U.S. address or latitude/longitude to query the nearest grid point
+      in the PV standoff and T98 safety maps.
+    </p>
+
+    <section class="card">
+      <label for="address">Address</label>
+      <input id="address" placeholder="e.g., Golden, CO" />
+
+      <button id="findBtn">Find location</button>
+
+      <p class="or">or enter coordinates</p>
+
+      <label for="lat">Latitude</label>
+      <input id="lat" type="number" step="any" value="39.74" />
+
+      <label for="lon">Longitude</label>
+      <input id="lon" type="number" step="any" value="-105.16" />
+
+      <label for="scenario">Scenario</label>
+      <select id="scenario">
+        <option value="70C">T98 = 70 °C</option>
+        <option value="80C">T98 = 80 °C</option>
+      </select>
+
+      <button id="queryBtn">Query dataset</button>
+    </section>
+
+    <section id="results" class="card results">
+      Results will appear here.
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
